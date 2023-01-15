@@ -46,9 +46,17 @@
 }
 
 .contents ul li {
-    border-right: 4px solid white;
     padding-right: 15px;
     list-style-type: none;
+}
+
+.contents ul li::after{
+    content: '|';
+    margin-left: 15px;
+}
+
+.contents ul li:last-child::after{
+    content: none;
 }
 
 .contents ul li:last-child {

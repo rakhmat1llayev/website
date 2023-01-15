@@ -69,11 +69,6 @@ a:hover {
     cursor: pointer;
 }
 
-@media(max-width:640px) {
-    .header-text {
-        font-size: 20px;
-    }
-}
 
 
 
@@ -88,19 +83,35 @@ a:hover {
 #hamburger svg {
     fill: white;
     width: 25px;
-
+    
 }
 
-button {
-    background-color: none;
-    border: none;
-    outline: none;
-    color: none;
+@media(max-width:640px) {
+    .header-text {
+        font-size: 20px;
+    }
+    #hamburger svg{
+        width: 20px;
+    }
+}
+@media (max-width:400px){
+    #hamburger svg{
+        width: 15px;
+    }
+    #hamburger{
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width:450px){
+    .list{
+        font-size: 13px;
+    }
 }
 
 
 @media(max-width:1040px) {
-
+    
     .lists {
         display: none;
         position: absolute;
@@ -117,7 +128,7 @@ button {
         box-shadow: -1px 5px 6px 0px;
         min-width: 200px;
     }
-
+    
     .list {
         width: 100%;
         text-align: center;
